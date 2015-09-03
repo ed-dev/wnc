@@ -2,28 +2,51 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
-    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+ <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
   </head>
   <body>
     
     <div data-role="page">
       <div data-role="header">
-	<h1>Text Inputs</h1>
+	<h1>WaiNZ Client</h1>
       </div>
-      
+       <div>
+	<h3>Calibration</h3>
+      </div>
       <div data-role="main" class="ui-content">
 	<form method="post" action="demoform.asp">
 	  <div class="ui-field-contain">
             <label for="conductivity">Conductivity</label>
             <input type="text" name="conductivity" id="conductivity">       
-            <label for="temp">Temp</label>
+            <label for="temp">Conductivity Temp</label>
             <input type="temp" name="temp" id="temp">
-            <label for="other">Other</label>
+            <label for="other">Temperature</label>
+            <input type="Temperature" name="Temperature" id="Temperature" placeholder="actual temp..">
+	  </div>
+	  <input type="Update" data-inline="true" value="Update">
+	</form>
+      </div>
+      
+      <div>
+	<h3>Configuration</h3>
+      </div>
+      <div data-role="main" class="ui-content">
+	<form method="post" action="demoform.asp">
+	  <div class="ui-field-contain">
+            <label for="Device Id">Device Id</label>
+            <input type="text" name="Device Id" id="Device Id">       
+            <label for="Sample Rate">Sample Rate</label>
+            <input type="Sample Rate" name="Sample Rate" id="Sample Rate">
+	    <label for="Power Mode">Power Mode</label>
+            <input type="Power Mode" name="Power Mode id="Power Mode">
+	    <label for="Sample Id">Sample Rate</label>
+            <input type="Sample Id" name="Sample Id" id="Sample Id">
+            <label for="Other">Other</label>
             <input type="other" name="other" id="other" placeholder="other..">
 	  </div>
-	  <input type="submit" data-inline="true" value="Submit">
+	  <input type="Update" data-inline="true" value="Update">
 	</form>
       </div>
 
